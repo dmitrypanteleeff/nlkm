@@ -168,6 +168,16 @@
     }
 }
 
+@media screen and (max-width: 320px) {
+    .form {
+        &__data {
+            &-text--big {
+                font-size: 21px;
+            }
+        }
+    }
+}
+
 
 
 
