@@ -2990,6 +2990,10 @@ button {
   .application__title-second {
     margin-bottom: 112px;
   }
+
+  .form__data-text--big {
+    font-size: 21px;
+  }
 }
 
 .webp body{ background-image: url(@img/picture.webp) 0 0 no-repeat; }
