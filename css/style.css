@@ -2970,6 +2970,10 @@ button {
     font-size: 40px;
   }
 
+  .title-second {
+    font-size: 32px;
+  }
+
   .contacts__img-inner {
     margin-right: 12px;
   }
@@ -2980,7 +2984,11 @@ button {
 
   .application__phone {
     left: 15px;
-    width: 108px;
+    width: 95px;
+  }
+
+  .application__title-second {
+    margin-bottom: 112px;
   }
 }
 
