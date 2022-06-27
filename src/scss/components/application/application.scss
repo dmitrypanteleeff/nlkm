@@ -216,7 +216,11 @@
     .application {
         &__phone {
             left: 15px;
-            width: 108px;
+            width: 95px;
+        }
+
+        &__title-second {
+            margin-bottom: 112px;
         }
     }
 }

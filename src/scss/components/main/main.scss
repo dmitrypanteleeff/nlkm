@@ -174,3 +174,9 @@
         min-height: 210px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .main {
+        max-width: none;
+    }
+}
