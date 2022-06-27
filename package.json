@@ -2,13 +2,14 @@
   "name": "nlkm",
   "version": "1.0.0",
   "description": "",
+  "homepage":"https://dmitrypanteleeff.github.io/nlkm",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp",
     "build": "gulp build --build",
-    "predeploy":"npm run build",
+    "predeploy":"npm run build", 
     "deploy": "gh-pages -d dist"
   },
   "author": "DmitryPanteleeff",
