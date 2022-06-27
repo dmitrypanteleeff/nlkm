@@ -1,0 +1,42 @@
+@import '../common/variables.scss';
+
+.input {
+    &__item {
+        background-color: $brightestColor;
+        border: 2px solid $mainColor;
+        color: $neutralLightColor;
+        text-transform: uppercase;
+
+        padding: 19px 20px;
+        border-radius: 15px;
+    }
+
+    &__item:-webkit-autofill,
+    &__item:-webkit-autofill:hover,
+    &__item:-webkit-autofill:focus,
+    &__item:-webkit-autofill:active {
+        box-shadow: 0 0 0 30px $brightestColor inset;
+        -webkit-box-shadow: 0 0 0 30px $brightestColor inset;
+        -webkit-text-fill-color: $neutralLightColor;
+    }
+
+    &__item::-webkit-input-placeholder {
+        color: $neutralLightColor;
+        text-transform: uppercase;
+    }
+
+    &__item::-moz-placeholder {
+        color: $neutralLightColor;
+        text-transform: uppercase;
+    }
+
+    &__item::-moz-placeholder {
+        color: $neutralLightColor;
+        text-transform: uppercase;
+    }
+
+    &__item::-ms-input-placeholder {
+        color: $neutralLightColor;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,71 @@
+<section class="register">
+    <div class="container register__container">
+        <h2 class="title-second register__title-second">
+            Запись на мойку
+        </h2>
+            <div class="accordion">
+                @@include('./components/accordion/button-title/button-title.html',
+                {
+                    'class-acc__btn':'register__acc-btn open',
+                    'class-acc__btn-text':'register__acc-btn-text',
+                    'acc__btn-text-step':'1/2',
+                    'acc__btn-text-service':'Выбор услуги',
+                    'class-acc__btn-img':'register__acc-btn-img'
+
+                })
+                <div class="register__description services__description">
+                    <p class="text services__description-text" >
+                        Можно выбрать любую услугу, мы скорректируем по телефону
+                    </p>
+                    <div class="services">
+                        <div class="services__list">
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./../../UI/button-dashed.html',{'class':'services__btn services__btn-open','text':'Больше услуг'})
+                        </div>
+                        <div class="services__list services__list-additional">
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./components/services/services-item.html',{'service':'Улуга 1', 'time':'45 мин', 'price':'330 ₽'})
+                            @@include('./../../UI/button-dashed.html',{'class':'services__btn services__btn-close','text':'Скрыть'})
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                @@include('./components/accordion/button-title/button-title.html',
+                {
+                    'class-acc__btn':'register__acc-btn open',
+                    'class-acc__btn-text':'register__acc-btn-text',
+                    'acc__btn-text-step':'2/2',
+                    'acc__btn-text-service':'Registration',
+                    'class-acc__btn-img':'register__acc-btn-img'
+
+                })
+                <div class="register__description form__description">
+                    <div class="form__data">
+                        <div class="form__data-group">
+                            @@include('./components/form/data-item.html', {'class-item':'form__data-item','alt':'календарь','src':'@img/calendar-icon.svg','class-img-wrapper':'form__data-img-wrapper','class-img-inner':'form__data-img-inner','class-text-inner':'form__data-text-inner','class-text-big':'form__data-text--big','class-text-small':'form__data-text--small','text-big':'10 апреля','text-small':'суббота'})
+                            @@include('./components/form/data-item.html', {'class-item':'form__data-item','alt':'время процедуры','src':'@img/clock-icon.svg','class-img-wrapper':'form__data-img-wrapper','class-img-inner':'form__data-img-inner','class-text-inner':'form__data-text-inner','class-text-big':'form__data-text--big','class-text-small':'form__data-text--small','text-big':'19:00','text-small':''})
+                        </div>
+
+                        <div class="form__data-group">
+                            @@include('./components/form/data-item.html', {'class-item':'form__data-item','alt':'займёт времени','src':'@img/time-icon.svg','class-img-wrapper':'form__data-img-wrapper','class-img-inner':'form__data-img-inner form__data-img-inner--time','class-text-inner':'form__data-text-inner','class-text-big':'form__data-text--big','class-text-small':'form__data-text--small','text-big':'45 минут','text-small':''})
+                            @@include('./components/form/data-item.html', {'class-item':'form__data-item','alt':'стоимость','src':'@img/price-icon.svg','class-img-wrapper':'form__data-img-wrapper','class-img-inner':'form__data-img-inner form__data-img-inner--price','class-text-inner':'form__data-text-inner','class-text-big':'form__data-text--big','class-text-small':'form__data-text--small','text-big':'330₽','text-small':''})
+                        </div>
+                    </div>
+                    <div class="form__contact-box">
+                        @@include('./components/form/contact-box.html',{'id':'contact-box','text':'Для завершения бронирования оставьте свои контакты. Наш менеджер свяжется для подтверждения или корректировки заказа.'})
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>

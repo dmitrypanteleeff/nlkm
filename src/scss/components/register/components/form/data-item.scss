@@ -1,0 +1,15 @@
+@import '../../../../common/variables.scss';
+
+.data {
+    &__img {
+        width: 100%;
+    }
+
+    &__text {
+        white-space: nowrap;
+    }
+
+    &__text-inner {
+        position: relative;
+    }
+}

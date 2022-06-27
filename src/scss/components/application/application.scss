@@ -1,0 +1,223 @@
+.application {
+    padding: 90px 0 160px;
+
+    &__container {
+        margin: 0 auto;
+        position: relative;
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__column {
+        width: 50%;
+    }
+
+    &__title-second {
+        max-width: 510px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        max-width: 505px;
+        width: 100%;
+        margin-bottom: 165px;
+    }
+
+    &__link-text {
+        font-size: 20px;
+        width: 125px;
+    }
+
+    &__phone {
+        display: flex;
+        justify-content: flex-end;
+
+        position: absolute;
+        left:0;
+
+        &-inner {
+            margin-right: 100px;
+            width: 348px;
+        }
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__app-link {
+        width: 298px;
+        padding: 15px 5px;
+        font-size: 20px;
+    }
+
+    &__app-link:first-child {
+        margin-bottom: 20px;
+    }
+
+    &__img-apple {
+        width: 41px;
+        margin-right: 20px;
+    }
+
+    &__img-google {
+        width: 42px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .application {
+        &__text {
+            margin-bottom: 65px;
+        }
+
+        &__phone-inner {
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .application {
+        &__phone-inner {
+            width: 260px;
+            margin-right: 66px;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .application {
+        &__column {
+            width: 100%;
+        }
+
+        &__text {
+            margin-left: auto;
+            width: 50%;
+            margin-bottom: 250px;
+        }
+
+        &__title-second {
+            margin: 0 auto 100px;
+            text-align: center;
+        }
+
+        &__phone {
+            left: 9%;
+            width: 200px;
+            top:136px;
+            justify-content: flex-start;
+
+            &-inner {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
+
+        &__app-links-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__app-link {
+            width: 224px;
+            padding: 10px 5px;
+        }
+
+        &__app-link:first-child {
+            margin-bottom: 0;
+        }
+
+        &__link-text {
+            width: 100px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .application {
+        padding: 54px 0 80px;
+        
+        &__title-second {
+            max-width: 316px;
+            width: 100%;
+            margin-bottom: 130px;
+        }
+
+        &__phone {
+            left: 12%;
+            width: 160px;
+        }
+
+        &__text {
+            margin-bottom: 220px;
+        }
+
+        &__app-link {
+            width: 190px;
+        }
+
+        &__img-apple {
+            width: 22px;
+        }
+
+        &__img-google {
+            width: 22px;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .application {
+        &__title-second {
+            text-align: left;
+            margin-bottom: 70px;
+        }
+
+        &__phone {
+            left: 12%;
+            width: 108px;
+        }
+
+        &__text {
+            max-width: 152px;
+            width: 100%;
+            margin-bottom: 150px;
+        }
+
+        &__link-text {
+            font-size: 10px;
+            width: 66px;
+        }
+
+        &__app-link {
+            width: 48%;
+        }
+
+        &__img-apple {
+            width: 22px;
+            margin-right: 7px;
+        }
+
+        &__img-google {
+            width: 22px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .application {
+        &__phone {
+            left: 15px;
+            width: 108px;
+        }
+    }
+}
+

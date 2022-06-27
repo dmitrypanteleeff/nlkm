@@ -1,0 +1,110 @@
+@import './variables';
+
+body {
+    background-color: $darkColor;
+    background-image: url("@img/picture.jpg") 0 0 no-repeat;
+
+}
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    margin: 0;
+    font: 700 90px/1.2 'PlayfairDisplay', serif;
+    color: $brightestColor;
+}
+
+.title-second {
+    margin: 0;
+    font: 700 60px/1.2 'PlayfairDisplay', serif;
+    color: $brightestColor;
+}
+
+
+
+.text {
+    margin: 0;
+    font: 400 25px/1.2 'Poppins', 'Golos', sans-serif;
+    color: $brightestColor;
+    
+    &--small {
+        font: 400 13px/1 'Poppins', 'Golos', sans-serif;
+        color: $brightestColor;
+    }
+
+    &-link {
+        font: 400 10px/1.2 'IBMPlexSans', 'Golos', sans-serif;
+        color: $brightestColor;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1440px) {
+    .container {
+        padding: 0 15px;
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .container {
+        max-width: none;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .title-second {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .title-second {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .title {
+        font-size: 52px;
+    }
+
+    
+}
+
+
+@media screen and (max-width:575px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .title-second {
+        font-size: 36px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .text--small {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:374px) {
+    .container {
+        padding: 0 15px;
+    }
+}

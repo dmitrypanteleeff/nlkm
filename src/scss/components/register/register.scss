@@ -1,0 +1,101 @@
+@import '../../common/variables.scss';
+@import './components/form/form.scss';
+@import './components/services/services.scss';
+@import './components/services/services-item.scss';
+@import './components/form/data-item.scss';
+@import './components/form/contact-box.scss';
+@import './components/accordion/button-title/button-title.scss';
+
+
+.register {
+    padding-top: 70px;
+    
+    &__title-second {
+        margin-bottom: 40px;
+    }
+
+    &__acc-btn {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 17px 84px 17px 20px;
+        background-color: transparent;
+
+        border: 3px solid $mainColor;
+        color: $mainColor;
+
+        &-text {
+            span {
+                color: $mainColor;
+                text-transform: uppercase;
+            }           
+
+            span:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__description {
+        overflow: hidden;
+        max-height: 2500px;
+        transition: max-height .5s, padding .5s;
+
+        &.hide{
+            max-height: 0;
+            transition: max-height .5s, padding .5s;   
+        }
+    } 
+}
+
+@media screen and (max-width: 1199px) {
+    .register {
+        &__acc-btn {
+            padding-right: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .register {
+        &__title-second {
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+    .register {
+        &__title-second {
+            margin-bottom: 30px;
+        }
+
+        &__acc-btn {
+            border: 1px solid $mainColor;
+            width: 106%;
+            padding: 17px 24px 17px 15px;
+            margin-bottom: 25px;
+            transform: translateX(-3%);
+
+            &-img {
+                width: 20px;
+            }
+    
+            &-text {
+                span {
+                    font-size: 18px;
+                }
+                
+                span:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+    } 
+}
+

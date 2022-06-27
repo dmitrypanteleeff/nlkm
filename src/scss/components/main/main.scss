@@ -1,0 +1,176 @@
+@import '../../common/variables.scss';
+
+.main {
+    &__block {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        min-height: 584px;
+
+
+    }
+
+    &__video-bg {
+        // max-width: 1980px;
+        width: 100%;
+        position: absolute;
+        top:0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    &__content {
+        z-index: 12;
+    }
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 0 13px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $darkMainColor;
+        backdrop-filter: blur(23px);
+        max-width: 568px;
+        border-radius: 30px;
+        padding: 0 40px 37px;
+        margin-top: 100px;
+
+        &-title {
+            margin-bottom: 20px;
+        }
+
+        &-text {
+            color: $darkColor;
+        }
+    }
+
+    &__counter {
+        margin: 120px 0 0 10px;
+        display: flex;
+        max-width: 654px;
+        width: 100%;
+        justify-content: space-between;
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__cards-wrapper {
+        width: 165px;
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cards-info {
+        width: 165px;
+        margin-top: 10px;
+    }
+
+    &__btn-video {
+        position: absolute;
+        top: 18px;
+        right: 22px;
+    }
+
+    
+
+    
+}
+
+.vidbg-box {
+    position: absolute;
+    width: 100%;
+    min-height: 584px;
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        &__block {
+            min-height: 480px;
+        }
+
+        &__counter {
+            margin-top: 40px;
+        }
+    }
+
+    .vidbg-box {
+        min-height: 480px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        &__block {
+            min-height: 350px;
+        }
+
+        &__info {
+            background-color: $lightMainColor;
+            margin: 280px auto 0;
+            padding: 12px 17px 32px 24px;
+        }
+
+        &__counter {
+            margin: 60px auto 0;
+        }
+
+        &__cards-wrapper {
+            width: 140px;
+        }
+
+        &__cards-info {
+            width: 140px;
+        }
+    }
+
+    .vidbg-box {
+        min-height: 350px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .main {
+        &__block {
+            min-height: 210px;
+        }
+        &__info {
+            margin: 190px auto 0;
+            max-width: 315px;
+            align-items: flex-start;
+
+            &-title {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__counter {
+            margin-top: 34px;
+        }
+
+        &__cards-wrapper {
+            width: 86px;
+        }
+
+        &__cards-info {
+            width: 86px;
+        }
+    }
+
+    .vidbg-box {
+        min-height: 210px;
+    }
+}

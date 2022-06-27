@@ -1,0 +1,121 @@
+@import '../../../../common/variables.scss';
+
+.contact-box {
+    &__text {
+        margin-bottom: 24px;
+    }
+
+    &__input-row {
+        max-width: 650px;
+        width: 100%;
+        margin-bottom: 29px;
+    }
+
+    &__input-item {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    &__check-rules {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        -khtml-appearance: none;
+        background-color: transparent;
+        border: 1px solid $mainColor;
+        padding: 14px;
+        border-radius: 0;
+        display: inline-block;
+        position: relative;
+        margin-left: 0;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    &__check-rules:checked:after {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        -khtml-appearance: none;
+        content: '\2714';
+        font-size: 29px;
+        position: absolute;
+        top: -3px;
+        left: 1px;
+        color: $mainColor;
+    }
+
+    &__row-confirm-input {
+        display: flex;
+        align-items: center;
+        max-width: 590px;
+        width: 100%;
+
+        margin-bottom: 50px;
+    }
+
+    &__text-rules {
+        font-size: 13px;
+        line-height: 1;
+        font-weight: 400;
+    }
+
+    &__btn {
+        max-width: 650px;
+        width: 100%;
+        font-size: 18px;
+        padding: 28px 15px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-box {
+        &__text {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contact-box {
+        &__text {
+            max-width: 390px;
+            margin: 0 auto 20px;
+        }
+
+        &__input-row {
+            margin-bottom: 17px;
+        }
+
+        &__input-item {
+            font-size: 12px;
+            border-radius: 7px;
+            padding: 11px 9px;
+        }
+
+        &__row-confirm-input {
+            margin-bottom: 33px;
+        }
+
+        &__btn {
+            font-size: 12px;
+            padding: 12px 15px;
+            border-radius: 9px;
+        }
+
+        &__check-rules {
+            padding: 9px;
+
+            &:checked:after {
+                top: -10px;
+            }
+        }
+
+        &__text-rules {
+            font-size: 10px;
+        }
+    }
+}

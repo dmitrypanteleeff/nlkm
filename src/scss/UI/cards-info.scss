@@ -1,0 +1,10 @@
+@import '../common/variables.scss';
+
+.cards {
+    &__info {
+        color: $brightestColor;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1;
+    }
+}

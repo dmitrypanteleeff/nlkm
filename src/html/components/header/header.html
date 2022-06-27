@@ -1,0 +1,44 @@
+<header class="header">
+   <div class="container header__container">
+        <!-- <div class="header__inner"> -->
+            <div class="header__top">
+                @@include('../../UI/logo.html', {'class':'header__logo'})
+
+                <button class="header__mob-btn">
+                    <div class="header__mob-btn-line header__mob-btn-line--top"></div>
+                    <div class="header__mob-btn-line header__mob-btn-line--bottom"></div>
+                </button>
+            </div>
+            
+            <div class="header__mob-menu">
+                <div class="header__middle header__middle--mobile">
+                    @@include('../../UI/navigation.html', {'class': 'header__navigate', 'class-text':'header__navigate-text','display':'none'})
+                    <div class="header__color-btns">
+                        @@include('../../UI/color-btn.html', {'color': 'dark'})
+                        @@include('../../UI/color-btn.html', {'color': 'light'})
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header__middle header__middle--desktop">
+                @@include('../../UI/navigation.html', {'class': 'header__navigate', 'class-text':'header__navigate-text','display':'none'})
+                <div class="header__color-btns">
+                    @@include('../../UI/color-btn.html', {'color': 'dark'})
+                    @@include('../../UI/color-btn.html', {'color': 'light'})
+                </div>
+            </div>
+            
+
+            <!-- @@include('../../UI/navigation.html', {'class': 'navigate__bottom', 'display':''}) -->
+            <div class="contacts header__contacts">
+                <div class="header__contacts-inner">
+                    @@include('../../UI/contacts-item.html', {'img': '@img/map-icon.svg', 'text-top':'г. Тверь','text-bottom':'ул.&nbsp;Коминтерна&nbsp;77Б'})
+                    @@include('../../UI/contacts-item.html', {'img': '@img/phone-icon.svg', 'text-top':'','text-bottom':'+7 (999) 999 99 99'})
+                </div>
+                    @@include('../../UI/button.html', {'class': 'header__button', 'text':'Заказать звонок', 'type':'button'})
+                
+            </div>
+
+        <!-- </div> -->
+   </div>
+</header>

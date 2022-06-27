@@ -1,0 +1,12 @@
+@import '../common/variables.scss';
+
+.button {
+    font: 250 12px/1.2 'Poppins', 'Golos', sans-serif;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: $mainColor;
+    color: $darkColor;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: 1px solid $mainColor;
+}

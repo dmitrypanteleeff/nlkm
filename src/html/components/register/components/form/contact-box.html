@@ -1,0 +1,12 @@
+<form id="@@id" class="contact-box" method="post">
+    <p class="text contact-box__text">@@text Для завершения бронирования оставьте свои контакты. Наш менеджер свяжется для подтверждения или корректировки заказа.</p>
+    @@include('../../../../UI/input.html',{'class-input-row':'contact-box__input-row','class-input-item':'contact-box__input-item contact-box__input-item-name','type':'text','placeholder':'Ваше имя', 'name':'firstname'})
+    @@include('../../../../UI/input.html',{'class-input-row':'contact-box__input-row','class-input-item':'contact-box__input-item contact-box__input-item-mail','type':'text','placeholder':'Ваш телефон', 'name':'mail'})
+
+    <div class="input__row-confirm contact-box__row-confirm-input">
+        <input class="input__check-rules contact-box__check-rules" checked="" type="checkbox">
+        <label class="text input__text-rules contact-box__text-rules" >Нажимая кнопку “Оформить заказ”, я даю согласие на обработку своих персональных данных</label>
+        <!-- <div class="rules-result" style="font-size: 14px; font-weight: bold;">Подтвердите согласие на обработку данных</div>  -->
+    </div>
+    @@include('../../../../UI/button.html',{'class':'contact-box__btn','text':'Оформить запись','type':'submit'})
+</form>

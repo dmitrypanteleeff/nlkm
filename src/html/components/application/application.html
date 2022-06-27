@@ -1,0 +1,25 @@
+<section class="application">
+    <div class="container application__container">
+        <div class="application__column application__about">
+            <h2 class="title-second application__title-second">
+                Теперь у нас есть приложение!
+            </h2>
+            <p class="text application__text">
+                Чтобы МойкаLike всегда была под рукой, а записаться к нам вы могли за считанные&nbsp;секунды.
+            </p>
+
+            <div class="application__app-links-inner">
+                @@include('../../UI/app-link.html', {'class':'application__app-link','class-link':'application__img-apple','href':'/','alt':'app-store','src':'@img/apple-store-icon.svg', 'class-text':'application__link-text','text':'Загрузить в&nbsp;App Store'})
+                @@include('../../UI/app-link.html', {'class':'application__app-link','class-link':'application__img-google','href':'/','alt':'google-play','src':'@img/google-play-icon.svg', 'class-text':'application__link-text', 'text':'Доступно в&nbsp;Google Play'})
+            </div>
+
+        </div>
+        <div class="application__column application__phone">
+            <div class="application__phone-inner">
+                <img alt="" src="@img/iPhone.png" class="application__phone-img"/>
+            </div>
+        </div>
+    </div>
+    
+    
+ </section>

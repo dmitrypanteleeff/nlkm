@@ -1,0 +1,31 @@
+@import "../common/variables"; 
+
+.navigate {
+    display: flex;
+    font: 700 17px/1.2 'Poppins', 'Golos', sans-serif;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__item {
+        color: $brightestColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__item:hover {
+        color: $mainColor;
+    }
+
+    &__inner.none {
+        display: none;
+    }
+
+
+    
+}
+

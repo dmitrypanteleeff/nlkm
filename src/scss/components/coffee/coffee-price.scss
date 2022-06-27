@@ -1,0 +1,44 @@
+@import '../../common/variables.scss';
+
+.coffee-prices__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+
+    &-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-img-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+
+    &-name-text {
+        font-weight: 600;
+    }
+
+    &-price {
+        font-weight: 600;
+    }
+
+
+}
+
+@media screen and (max-width:575px) {
+    .coffee-prices__item {
+        &-name-text {
+            font-size: 18px;
+        }
+    
+        &-price {
+            font-size: 18px;
+        }
+    }
+}

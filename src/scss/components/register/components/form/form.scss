@@ -1,0 +1,171 @@
+@import '../../../../common/variables.scss';
+
+.form {
+    &__description {
+        max-width: 1050px;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        margin-right: 35px;
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-item {
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        &-img-wrapper {
+            width: 44px;
+            margin-right: 24px;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-img-inner {
+            width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            
+
+            &--time {
+                width: 23px;
+            }
+
+            &--price {
+                width: 41px;
+            }
+        }
+
+        &-text-inner {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-text--big {
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        &-text--small {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1;
+
+            position: absolute;
+            bottom:-20px;
+        }
+
+    }
+
+    &__contact-box {
+        max-width: 650px;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+        &__description {
+            flex-direction: column;
+        }
+
+        &__data {
+            max-width: 415px;
+            width: 100%;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+            &-img-wrapper {
+                margin-right: 12px;
+                margin-top: 0;
+            }
+
+            &-img-inner {
+                width: 30px;
+                flex-shrink: 0;
+                
+    
+                &--time {
+                    width: 18px;
+                }
+    
+                &--price {
+                    width: 28px;
+                }
+            }
+
+            &-text--big {
+                font-size: 30px;
+            }
+    
+            &-text--small {
+                font-size: 18px;
+            }
+        }
+
+        &__contact-box {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .form {
+        
+        &__data {
+            max-width: 300px;
+            
+            &-item {
+                margin-bottom: 35px;
+            }
+
+            &-img-wrapper {
+                margin-right: 8px;
+                width: auto;
+            }
+
+            &-img-inner {
+                width: 22px;
+                
+    
+                &--time {
+                    width: 14px;
+                }
+    
+                &--price {
+                    width: 23px;
+                }
+            }
+
+            &-text--big {
+                font-size: 26px;
+            }
+    
+            &-text--small {
+                font-size: 14px;
+                bottom:-15px;
+            }
+        }
+    }
+}
+
+
+
+

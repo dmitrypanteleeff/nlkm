@@ -1,0 +1,238 @@
+@import '../../../../common/variables.scss';
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+
+    
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        &-name {
+            max-width: 350px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        &-wrapper {
+            display: flex;
+            max-width: 720px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        &-time {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+
+                path {
+                    fill: $mainColor;
+                }
+            }
+
+            &-text {
+                // margin-top: 8px;
+                font-weight: 600;
+            }
+        }
+
+        &-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-text {
+                font-weight: 600;
+                color: $mainColor;
+                margin-right: 55px;
+            }
+
+            &-btn {
+                background-color: transparent;
+                border-color: $mainColor;
+                color: $mainColor;
+                width: 190px;
+                padding: 13px 10px;
+                font-size: 18px;
+
+                &:hover {
+                    background-color: $mainColor;
+                    border-color: $mainColor;
+                    color: $darkColor;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .services-item {
+        margin-bottom: 23px;
+
+        &__link {
+            &-text {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__info {
+            &-name {
+                max-width: 260px;
+            }
+
+            &-wrapper {
+                max-width: 620px;
+            }
+
+            &-time {
+                &-icon {
+                    margin-right: 10px;
+
+                    path {
+                        fill: $mainColor;
+                    }
+                }
+            }
+
+            &-price {
+                &-text {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:767px) {
+    .services-item {
+        position: relative;
+        padding-bottom: 36px;
+        margin-bottom: 36px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: -7%;
+            width: 110%;
+
+            height: 1px;
+            background-color: #E0E0E0;
+        }
+
+        &__link {
+            &-text {
+                margin-bottom: 36px;
+            }
+        }
+
+        &__info {
+            &-name {
+                max-width: 50%;
+                align-items: flex-start;
+                padding-top: 10px;
+ 
+            }
+
+            &-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 50%;
+            }
+
+            &-time {
+                &-icon {
+                    margin-right: 10px;
+
+                    path {
+                        fill: $brightestColor;
+                    }
+                }
+            }
+
+            &-price {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+
+                &-text {
+                    margin-right: 0;
+                    margin-left: 52px;
+                    margin-bottom: 10px;
+                }
+
+                &-btn {
+                    max-width: 150px;
+                    width: 100%;
+                    font-size: 14px;
+                    padding: 11px 10px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:575px) {
+    .services-item {
+        padding-bottom: 20px;
+
+        &::after {
+            right: -10%;
+            width: 112%;
+        }
+
+        &__link {   
+            &-text {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__info {
+            &-wrapper {
+                padding-left: 14px;
+            }
+
+            &-name {
+                font-size: 18px;
+            }
+
+            &-time {
+                &-text {
+                    font-size: 18px;
+                }
+
+                &-icon {
+                    width: 27px;
+                    margin-right: 9px;
+                }
+
+
+            }
+
+            &-price {
+                flex-direction: column;
+                align-items: flex-start;
+
+                &-text {
+                    font-size: 18px;
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+}

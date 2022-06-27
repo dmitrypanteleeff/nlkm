@@ -1,0 +1,33 @@
+@import '../common/variables.scss';
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 10px 12px;
+    background-color: $mainColor;
+    width: 100%;
+    max-width: 52px;
+
+    &__text {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card {
+        max-width: 44px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .card {
+        padding: 9px 5px 6px;
+        max-width: 26px;
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+}

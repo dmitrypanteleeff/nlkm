@@ -1,0 +1,99 @@
+@import '../../common/variables.scss';
+@import './coffee-price.scss';
+
+.coffee {
+    width: 100%;
+    padding: 56px 0 24px;
+    min-height: 660px;
+
+    background-image: url($coffeeImgURL);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__container {
+        padding: 0 0 0 15px;
+    }
+
+    &__title-second {
+        margin-bottom: 100px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__prices-list {
+        max-width: 420px;
+        width: 100%;
+    }
+
+    &__text {
+        max-width: 504px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1440px) {
+    .coffee {
+        &__container {
+            padding: 0 15px 0 15px;
+        }
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .coffee {
+        &__prices-list {
+            max-width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .coffee {
+        &__text {
+            max-width: 420px;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .coffee {
+        &__content {
+            flex-direction: column;
+        }
+
+        &__text {
+            max-width: 425px;
+            margin-bottom: 70px;
+        }
+
+        &__prices-list {
+            max-width: 425px;
+        }
+
+        &__title-second {
+            margin-bottom: 70px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .coffee {
+        min-height: 416px;
+
+        &__title-second {
+            max-width: 425px;
+            width: 100%;
+            margin: 0 auto 20px;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+        }
+    }
+}

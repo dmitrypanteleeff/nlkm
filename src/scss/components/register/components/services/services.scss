@@ -1,0 +1,29 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+
+    &__description {
+        &-text {
+            margin-bottom: 30px;
+        }
+    }
+
+
+    &__list {
+        overflow: hidden;
+        max-height: 1200px;
+        transition: max-height .5s, padding .5s;
+
+        &.hide{
+            max-height: 0;
+            transition: max-height .5s, padding .5s;   
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .services {
+        padding-right: 0;
+    }
+}

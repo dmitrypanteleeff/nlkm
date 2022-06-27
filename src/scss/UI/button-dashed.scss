@@ -1,0 +1,26 @@
+@import '../common/variables.scss';
+
+
+.btn-dashed {
+    &__link {
+        display: block;
+
+        &.hide {
+            display: none;
+        }  
+
+        &-text {
+            cursor: pointer;
+            display: inline-block;
+            color: $neutralColor;
+            border-bottom: 1px dashed $neutralColor;
+
+            margin-bottom: 30px;
+
+            &:hover {
+                color: $neutralLightColor;
+                border-bottom: 1px dashed $neutralLightColor;
+            }
+        }
+    }
+}
