@@ -2966,8 +2966,16 @@ button {
 }
 
 @media screen and (max-width: 320px) {
+  .title {
+    font-size: 40px;
+  }
+
   .contacts__img-inner {
     margin-right: 12px;
+  }
+
+  .main {
+    max-width: none;
   }
 
   .application__phone {
