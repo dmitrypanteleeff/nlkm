@@ -2513,15 +2513,11 @@ button {
   }
 
   .form__data-text--big {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .form__data-text--small {
     font-size: 18px;
-  }
-
-  .form__data-group:first-child {
-    margin-right: 10px;
   }
 
   .form__contact-box {
@@ -2758,7 +2754,7 @@ button {
   }
 
   .form__data-text--big {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .form__data-text--small {
