@@ -86,7 +86,7 @@
 
         &__data {
             // max-width: 415px;
-            max-width: 350px;
+            max-width: 415px;
             width: 100%;
             margin: 0 auto;
             flex-direction: row;
@@ -118,6 +118,10 @@
     
             &-text--small {
                 font-size: 18px;
+            }
+
+            &-group:first-child {
+                margin-right: 10px;
             }
         }
 
